@@ -1,0 +1,22 @@
+{
+ "name": "fitpulse",
+ "version": "2.1.0",
+ "type": "module",
+ "engines": {
+  "node": ">=20"
+ },
+ "scripts": {
+  "start": "node server/server.js",
+  "test": "node --test tests/data.test.mjs",
+  "e2e": "playwright test",
+  "lhci": "lhci autorun"
+ },
+ "dependencies": {
+  "web-push": "^3.6.7"
+ },
+ "devDependencies": {
+  "@playwright/test": "^1.48.0",
+  "@lhci/cli": "^0.14.0",
+  "@axe-core/playwright": "^4.10.0"
+ }
+}
